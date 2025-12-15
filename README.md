@@ -1,49 +1,106 @@
-🩸 Desktop Blood Donation Management System (Java Swing + MySQL)
+# 🩸 Desktop Blood Donation Management System **Java Swing + MySQL**
 
-This project is a desktop-based Blood Donation Management System developed using Java Swing for the GUI and MySQL for the database. It allows users to register, log in, request blood, register as donors, and view history, while providing a separate admin panel to manage and view all records.
+A desktop-based Blood Donation Management System developed using **Java Swing** for the graphical user interface and **MySQL** for database management.  
+The application allows users to register, log in, request blood, register as donors, and view their history, while providing a dedicated **Admin Panel** to manage all system records.
 
-🩸 Project Objective
+## 🎯 Project Objective
 
-The main goal is to create a simple, user-friendly desktop application that helps manage blood donation records, connect donors with requests, and allow administrators to oversee the system efficiently.
-🚀 Technologies Used
+The main goal of this project is to create a **simple, user-friendly desktop application** that:
+- Manages blood donation records efficiently
+- Connects blood donors with blood requests
+- Allows administrators to monitor and control the entire system
 
-Java (Core language)
-Java Swing (For graphical user interface)
-JDBC (For MySQL database connectivity)
-MySQL (Database storage)
-XAMPP (Local server for MySQL – recommended for running the database)
+This project is developed for **academic learning purposes** 🚀
 
-📂 Project Features
+## 🚀 Technologies Used
 
-User Registration → with full name, username, password, and location (province, city, postal code)
-User Login → secure login (plain text passwords – note: for academic use)
-Hardcoded Admin Login → (username: admin, password: admin123)
-User Dashboard →
-Request Blood (select blood type and location)
-Register as Donor (blood type, availability, contact, email)
-View Personal Request History
-Toggle Theme (Light/Dark mode)
-Logout
+- **Java** (Core Language)
+- **Java Swing** (Graphical User Interface)
+- **JDBC** (MySQL Database Connectivity)
+- **MySQL** (Database Storage)
+- **XAMPP** (Local MySQL Server)
 
-Admin Dashboard →
-View All Users
-View All Blood Requests
-View All Registered Donors
 
-Beautiful UI → Gradient backgrounds, custom styled buttons, modern red-themed design
-Database Integration → Separate tables for users, locations, donors, and blood requests
+## ✨ Project Features
 
-🛠️ How to Run the Project
+### 👤 User Features
+- User Registration  
+  - Full Name  
+  - Username & Password  
+  - Location (Province, City, Postal Code)
+- User Login (Plain text passwords – academic use only)
+- Request Blood  
+  - Select Blood Type  
+  - Select Location
+- Register as Donor  
+  - Blood Type  
+  - Availability  
+  - Contact Number  
+  - Email Address
+- View Personal Request History
+- Light / Dark Theme Toggle
+- Secure Logout
+  
 
-Install XAMPP (or any MySQL server) on your PC.
-Start MySQL from XAMPP Control Panel.
-Open phpMyAdmin and create a new database named blood_donation_db.
-Create the required tables (SQL schema below) or import if you have a dump file.
-Open the project in NetBeans or any Java IDE.
-Add MySQL Connector/J JAR file to your project libraries:
-Download from: https://dev.mysql.com/downloads/connector/j/
-Add the JAR (e.g., mysql-connector-j-8.x.x.jar) to your project's classpath.
+### 🛠️ Admin Features
+- Hardcoded Admin Login  
+  - **Username:** `admin`  
+  - **Password:** `admin123`
+- View All Registered Users
+- View All Blood Requests
+- View All Registered Donors
 
-Update DBConnection.java if needed (URL, username, password – default is root with blank password).
-Run Main.java or BloodDonationSystem1.java (both start the Login form).
-Boom! The application will launch. Register a user or login as admin / admin123.
+
+## 🎨 User Interface
+
+- Modern **red-themed design**
+- Gradient backgrounds
+- Custom styled buttons
+- Clean and user-friendly layouts
+- 
+
+## 🗄️ Database Design
+
+The application uses **MySQL** with separate tables for:
+- Users
+- Locations
+- Donors
+- Blood Requests
+
+
+## 🛠️ How to Run the Project
+
+1. Install **XAMPP** (or any MySQL server).
+2. Start **MySQL** from the XAMPP Control Panel.
+3. Open **phpMyAdmin** and create a new database: **blood_donation_db**
+4. Extract the rar file downloaded from repository
+5. Import the **blood_donation_db(1)** into database
+6. Open the project in **NetBeans** or any Java IDE.
+8. Download and add **MySQL Connector/J** to the project libraries: (https://dev.mysql.com/downloads/connector/j/)
+9. Add the JAR file (e.g., `mysql-connector-j-8.x.x.jar`) to the project classpath.
+10. Update `DBConnection.java` if required:
+   * Database URL
+   * Username (default: `root`)
+   * Password (default: blank)
+
+11. Run:
+   * `Main.java` **OR**
+   * `BloodDonationSystem1.java`
+
+11. The login screen will appear 🎉
+    * Register a new user **OR**
+    * Login as admin (`admin / admin123`)
+
+
+## 📌 Notes
+
+* This project is intended for **educational purposes**.
+* Passwords are stored in **plain text** and are **not recommended for production use**.
+* Future improvements may include password hashing, role-based access, and online deployment.
+
+
+## 👨‍💻 Author
+
+**Saad Ahmed**
+Developed as a **Desktop Application Project** using Java Swing & MySQL.
+
